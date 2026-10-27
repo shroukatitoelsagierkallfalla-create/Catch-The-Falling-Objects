@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Summer Catch 🍋</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Game Header -->
+    <header>
+        <h1>☀️ Summer Catch 🍋</h1>
+        <p>Catch the falling fruits!</p>
+    </header>
+
+
+    <!-- Score Board -->
+    <div class="score-board">
+
+        <div class="score-box">
+            <span>🏆 Score</span>
+            <strong id="score">0</strong>
+        </div>
+
+        <div class="score-box">
+            <span>❤️ Lives</span>
+            <strong id="lives">3</strong>
+        </div>
+
+    </div>
+
+
+    <!-- Game Area -->
+    <div id="game">
+
+        <!-- Basket -->
+        <div id="basket">🧺</div>
+
+        <!-- Start Message -->
+        <div id="start-message">
+            <h2>Ready? 🍓</h2>
+            <p>Use ← and → to move the basket</p>
+            <button id="startButton">Start Game</button>
+        </div>
+
+        <!-- Game Over -->
+        <div id="game-over">
+
+            <h2>Game Over! 🌴</h2>
+
+            <p>Your Score:</p>
+
+            <strong id="final-score">0</strong>
+
+            <button id="restartButton">
+                Play Again 🔄
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

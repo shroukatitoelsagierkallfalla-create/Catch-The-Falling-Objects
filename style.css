@@ -1,0 +1,286 @@
+/* =====================================
+   General
+===================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        180deg,
+        #87CEEB,
+        #BDECF7,
+        #FFF3B0
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #24545c;
+}
+
+
+/* =====================================
+   Header
+===================================== */
+
+header {
+    text-align: center;
+    margin-top: 25px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #ff7f50;
+
+    text-shadow: 2px 2px white;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* =====================================
+   Score Board
+===================================== */
+
+.score-board {
+    display: flex;
+    gap: 20px;
+
+    margin: 20px 0;
+}
+
+.score-box {
+    background-color: white;
+
+    padding: 10px 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+
+    min-width: 120px;
+}
+
+.score-box span {
+    display: block;
+    font-size: 16px;
+}
+
+.score-box strong {
+    font-size: 25px;
+    color: #ff7f50;
+}
+
+
+/* =====================================
+   Game Area
+===================================== */
+
+#game {
+    width: 700px;
+    height: 500px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    border: 5px solid white;
+
+    background:
+        linear-gradient(
+            180deg,
+            #76d7ea 0%,
+            #b8edf2 70%,
+            #f9d976 70%,
+            #f9d976 100%
+        );
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================
+   Basket
+===================================== */
+
+#basket {
+    position: absolute;
+
+    bottom: 15px;
+    left: 320px;
+
+    font-size: 60px;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+}
+
+
+/* =====================================
+   Falling Objects
+===================================== */
+
+.falling-object {
+    position: absolute;
+
+    top: -50px;
+
+    font-size: 40px;
+
+    user-select: none;
+}
+
+
+/* =====================================
+   Start Message
+===================================== */
+
+#start-message {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.85);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    z-index: 10;
+}
+
+#start-message h2 {
+    font-size: 40px;
+    color: #ff7f50;
+}
+
+#start-message p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* =====================================
+   Buttons
+===================================== */
+
+button {
+
+    border: none;
+
+    padding: 12px 28px;
+
+    border-radius: 25px;
+
+    background-color: #ff7f50;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+    background-color: #ff6347;
+}
+
+
+/* =====================================
+   Game Over
+===================================== */
+
+#game-over {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    z-index: 20;
+}
+
+#game-over h2 {
+    font-size: 45px;
+
+    color: #ff6347;
+}
+
+#game-over p {
+    font-size: 20px;
+}
+
+#final-score {
+    font-size: 50px;
+
+    color: #f4b400;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media (max-width: 750px) {
+
+    #game {
+        width: 95vw;
+        height: 70vh;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    #basket {
+        font-size: 50px;
+    }
+}
